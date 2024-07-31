@@ -25,6 +25,12 @@
 
 A seguir, você encontrará um guia detalhado para a instalação e configuração das principais ferramentas que utilizo em meu ambiente de desenvolvimento. Todos os comandos devem ser executados no PowerShell em modo administrador.
 
+- <a href="#chocolatey">Chocolatey</a>
+- <a href="#nodejs--nmv">Node.js + nmv</a>
+- <a href="#yarn">Yarn</a>
+- <a href="#composer">Composer</a>
+- <a href="#docker-e-docker-compose">Docker e Docker Compose</a>
+
 ### Chocolatey
 
 - O [Chocolatey](https://chocolatey.org) é gerenciador de pacotes para Windows e com ele é possível você instalar e remover facilmente programas (ex: nvm, node, java).
@@ -61,19 +67,27 @@ O [Yarn](https://yarnpkg.com) é um gerenciador de dependências para projetos J
 
 ### Composer
 
-O [Composer](https://getcomposer.org/) é um gerenciador de dependências para PHP.
+O [Composer](https://getcomposer.org) é um gerenciador de dependências para PHP.
 
 - Como instalar o Composer: `choco install composer`
 - Verificar a versão instalada: `composer --version`
 - Atualizar a versão do Composer: `choco upgrade composer`
 
+### Docker e Docker Compose
+
+O [Docker](https://www.docker.com) é uma plataforma para criar e gerenciar contêineres que encapsulam aplicações e suas dependências, enquanto [Docker Compose](https://docs.docker.com/compose) é uma ferramenta para definir e executar multi-contêineres Docker usando um único arquivo de configuração.
+
+Acesse o [guia](https://efficient-sloth-d85.notion.site/Docker-e-Docker-Compose-16771f2ceefe4a05a8c29df4ca49e97a) de como instalar o Docker e Docker Compose nos principais sistemas operacionais
+
 ## Problemas
 
 A seguir, você encontrará instruções para corrigir alguns problemas comuns no ambiente de desenvolvimento.
 
+- <a href="#wampserver-curl-error-60-ssl-certificate-unable-to-get-local-issuer-certificate">WampServer cURL error 60: SSL certificate: unable to get local issuer certificate</a>
+
 ### WampServer cURL error 60: SSL certificate: unable to get local issuer certificate
 
-Se, ao usar cURL no PHP com o [WampServer](https://wampserver.aviatechno.net/), você encontrar o erro `cURL error 60: SSL certificate: unable to get local issuer certificate`, siga os passos abaixo para resolver o problema:
+Se, ao usar cURL no PHP com o [WampServer](https://wampserver.aviatechno.net), você encontrar o erro `cURL error 60: SSL certificate: unable to get local issuer certificate`, siga os passos abaixo para resolver o problema:
 
 - Baixe o [pacote de certificados](https://curl.se/docs/caextract.html)
   - Arquivo `cacert.pem`
