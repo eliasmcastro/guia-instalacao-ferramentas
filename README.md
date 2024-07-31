@@ -10,7 +10,8 @@
 
 <p align="center">
   <a href="#sites-essenciais">Sites essenciais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#ferramentas">Ferramentas</a>
+  <a href="#ferramentas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#problemas">Problemas</a>
 </p>
 
 ## Sites essenciais
@@ -65,3 +66,25 @@ O [Composer](https://getcomposer.org/) é um gerenciador de dependências para P
 - Como instalar o Composer: `choco install composer`
 - Verificar a versão instalada: `composer --version`
 - Atualizar a versão do Composer: `choco upgrade composer`
+
+## Problemas
+
+A seguir, você encontrará instruções para corrigir alguns problemas comuns no ambiente de desenvolvimento.
+
+### WampServer cURL error 60: SSL certificate: unable to get local issuer certificate
+
+Se, ao usar cURL no PHP com o [WampServer](https://wampserver.aviatechno.net/), você encontrar o erro `cURL error 60: SSL certificate: unable to get local issuer certificate`, siga os passos abaixo para resolver o problema:
+
+- Baixe o [pacote de certificados](https://curl.se/docs/caextract.html)
+  - Arquivo `cacert.pem`
+- Coloque o pacote na pasta: `C:\wamp64\bin\php\your-php-version\extras\ssl`
+- Certifique-se de que o arquivo `mod_ssl.so` esteja na pasta: `C:\wamp64\bin\apache\your-apache-version\modules`
+- Habilite o `mod_ssl` no arquivo `httpd.conf` localizado em: `C:\wamp64\bin\apache\your-apache-version\conf`
+- Habilite a extensão `openssl` no arquivo `php.ini`. É necessário fazer essa alteração em dois locais diferentes:
+  - O primeiro local pode ser acessado através do ícone `WampServer -> PHP -> php.ini` na barra de tarefas do Windows
+  - O segundo local está em `C:\wamp64\bin\php\your-php-version`
+- Ainda no arquivo `php.ini` dos dois locais
+  - Encontre as linhas `curl.cainfo` e `openssl.cafile` e atualize ambas para:
+    - `curl.cainfo="C:\wamp64\bin\php\your-apache-version\extras\ssl\cacert.pem"`
+    - `openssl.cafile="C:\wamp64\bin\php\your-apache-version\extras\ssl\cacert.pem"`
+- Após fazer essas alterações, salve os arquivos e reinicie o servidor.
