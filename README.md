@@ -79,6 +79,10 @@ O [Docker](https://www.docker.com) é uma plataforma para criar e gerenciar cont
 
 Acesse o [guia](https://efficient-sloth-d85.notion.site/Docker-e-Docker-Compose-16771f2ceefe4a05a8c29df4ca49e97a) de como instalar o Docker e Docker Compose nos principais sistemas operacionais
 
+### ESLint e Prettier para Node.js
+
+Acesse o [guia](https://efficient-sloth-d85.notion.site/ESLint-e-Prettier-Trilha-Node-js-d3f3ef576e7f45dfbbde5c25fa662779) e veja o passo a passo de como realizar a configuração do ESLint, Prettier e EditorConfig para Node.js
+
 ## Problemas
 
 A seguir, você encontrará instruções para corrigir alguns problemas comuns no ambiente de desenvolvimento.
