@@ -1,0 +1,76 @@
+{
+  "workbench.iconTheme": "material-icon-theme", // Define o tema de ícones do trabalho como "material-icon-theme"
+  "workbench.colorTheme": "Dracula Theme", // Define o tema de cores do editor como "Dracula Theme"
+  "workbench.startupEditor": "newUntitledFile", // Abre um novo arquivo não salvo ao iniciar o VS Code
+
+  "editor.fontFamily": "Fira Code", // Define a fonte do editor como "Fira Code"
+  "editor.fontSize": 14, // Define o tamanho da fonte do editor como 14 pixels
+  "editor.lineHeight": 24, // Define a altura da linha como 24 pixels
+  "editor.fontLigatures": true, // Habilita ligaduras de fonte (combinando caracteres especiais)
+  "editor.minimap.enabled": false, // Desabilita a minimapa à direita do editor
+  "editor.rulers": [100, 120], // Adiciona réguas verticais em 100 e 120 caracteres
+  "editor.tabSize": 2, // Define o tamanho da tabulação como 2 espaços
+  "editor.renderLineHighlight": "gutter", // Destaca a linha atual na área de números de linha
+  "editor.parameterHints.enabled": false, // Desabilita dicas de parâmetros ao digitar funções
+  "editor.formatOnSave": false, // Desabilita a formatação automática ao salvar
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }, // Aplica correções do ESLint explicitamente ao salvar
+  "editor.unicodeHighlight.allowedCharacters": { "´": true }, // Permite o destaque de caracteres Unicode específicos
+  
+  "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal integrado como 14 pixels
+  "terminal.integrated.profiles.windows": { // Configura perfis do terminal integrado no Windows
+    "PowerShell": { "source": "PowerShell", "icon": "terminal-powershell" }, // Configuração para PowerShell
+    "Command Prompt": { "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"], "args": [], "icon": "terminal-cmd" }, // Configuração para Command Prompt
+    "Git Bash": { "source": "Git Bash" } // Configuração para Git Bash
+  },
+
+  "explorer.confirmDelete": false, // Não solicita confirmação ao excluir arquivos
+  "explorer.compactFolders": false, // Não compacta pastas no explorador de arquivos
+  "explorer.confirmDragAndDrop": false, // Não solicita confirmação ao arrastar e soltar arquivos
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" }, // Define o perfil de sintaxe para Emmet no JavaScript como JSX
+  "emmet.includeLanguages": { "javascript": "javascriptreact" }, // Inclui o JavaScript como React para Emmet
+
+  "javascript.preferences.quoteStyle": "single", // Define o estilo de citação para JavaScript como aspas simples
+  "javascript.updateImportsOnFileMove.enabled": "never", // Desabilita a atualização automática de importações ao mover arquivos JavaScript
+  "typescript.preferences.quoteStyle": "single", // Define o estilo de citação para TypeScript como aspas simples
+  "typescript.updateImportsOnFileMove.enabled": "never", // Desabilita a atualização automática de importações ao mover arquivos TypeScript
+
+  "files.autoSave": "off", // Desabilita a salvamento automático de arquivos
+  "prettier.singleQuote": true, // Define o uso de aspas simples em vez de aspas duplas no Prettier
+  "breadcrumbs.enabled": true, // Habilita a navegação em breadcrumbs (trilha de navegação) no editor
+  "diffEditor.maxComputationTime": 0, // Define o tempo máximo de computação para diffs como 0 (sem limite)
+  "diffEditor.ignoreTrimWhitespace": false, // Não ignora espaços em branco no final das linhas ao comparar diffs
+  "extensions.ignoreRecommendations": true, // Ignora recomendações de extensões
+  "liveServer.settings.donotShowInfoMsg": true, // Desabilita mensagens informativas do Live Server
+  "security.workspace.trust.untrustedFiles": "open", // Permite abrir arquivos não confiáveis sem aviso
+
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  "[php]": { "editor.defaultFormatter": "bmewburn.vscode-intelephense-client" }, // Define o Intelephense como formatador padrão
+  "[vue]": { "editor.defaultFormatter": "octref.vetur" }, // Define o Vetur como formatador padrão
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // Define o Prettier como formatador padrão
+  
+  "material-icon-theme.folders.associations": { // Associa ícones de pasta a nomes de pasta específicos no tema de ícones
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock"
+  },
+  "material-icon-theme.files.associations": { // Associa ícones de arquivos a tipos de arquivo específicos no tema de ícones
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune"
+  }
+
+}
