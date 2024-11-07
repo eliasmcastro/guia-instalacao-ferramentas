@@ -29,7 +29,9 @@ A seguir, você encontrará um guia detalhado para a instalação e configuraç�
 - <a href="#nodejs--nmv">Node.js + nmv</a>
 - <a href="#yarn">Yarn</a>
 - <a href="#composer">Composer</a>
+- <a href="#insomnia">Insomnia</a>
 - <a href="#docker-e-docker-compose">Docker e Docker Compose</a>
+- <a href="#eslint-e-prettier-para-nodejs">ESLint e Prettier para Node.js</a>
 
 ### Chocolatey
 
@@ -73,6 +75,10 @@ O [Composer](https://getcomposer.org) é um gerenciador de dependências para PH
 - Verificar a versão instalada: `composer --version`
 - Atualizar a versão do Composer: `choco upgrade composer`
 
+### Insomnia
+
+O [Insomnia](https://insomnia.rest) é uma ferramenta para testar APIs, acesse o site e e baixe a versão adequada para o seu sistema operacional
+
 ### Docker e Docker Compose
 
 O [Docker](https://www.docker.com) é uma plataforma para criar e gerenciar contêineres que encapsulam aplicações e suas dependências, enquanto [Docker Compose](https://docs.docker.com/compose) é uma ferramenta para definir e executar multi-contêineres Docker usando um único arquivo de configuração.
@@ -82,6 +88,8 @@ Acesse o [guia](https://efficient-sloth-d85.notion.site/Docker-e-Docker-Compose-
 ### ESLint e Prettier para Node.js
 
 Acesse o [guia](https://efficient-sloth-d85.notion.site/ESLint-e-Prettier-Trilha-Node-js-d3f3ef576e7f45dfbbde5c25fa662779) e veja o passo a passo de como realizar a configuração do ESLint, Prettier e EditorConfig para Node.js
+
+Nota: Foi necessário adicionar essa regra "editor.formatOnSave": false no settings.json do VSCode para funcionar
 
 ## Problemas
 
