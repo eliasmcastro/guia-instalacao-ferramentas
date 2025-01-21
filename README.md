@@ -32,6 +32,7 @@ A seguir, você encontrará um guia detalhado para a instalação e configuraç�
 - <a href="#insomnia">Insomnia</a>
 - <a href="#docker-e-docker-compose">Docker e Docker Compose</a>
 - <a href="#eslint-e-prettier-para-nodejs">ESLint e Prettier para Node.js</a>
+- <a href="#visual-studio-code">Visual Studio Code</a>
 
 ### Chocolatey
 
@@ -77,7 +78,7 @@ O [Composer](https://getcomposer.org) é um gerenciador de dependências para PH
 
 ### Insomnia
 
-O [Insomnia](https://insomnia.rest) é uma ferramenta para testar APIs, acesse o site e e baixe a versão adequada para o seu sistema operacional
+O [Insomnia](https://insomnia.rest) é uma ferramenta para testar APIs, acesse o site e baixe a versão adequada para o seu sistema operacional
 
 ### Docker e Docker Compose
 
@@ -90,6 +91,29 @@ Acesse o [guia](https://efficient-sloth-d85.notion.site/Docker-e-Docker-Compose-
 Acesse o [guia](https://efficient-sloth-d85.notion.site/ESLint-e-Prettier-Trilha-Node-js-d3f3ef576e7f45dfbbde5c25fa662779) e veja o passo a passo de como realizar a configuração do ESLint, Prettier e EditorConfig para Node.js
 
 Nota: Foi necessário adicionar essa regra "editor.formatOnSave": false no settings.json do VSCode para funcionar
+
+### Visual Studio Code
+
+O [Visual Studio Code (VS Code)](https://code.visualstudio.com) é um editor de código-fonte desenvolvido pela Microsoft, acesse o site e baixe a versão adequada para o seu sistema operacional
+
+- Fontes
+  - [Fira Code](https://github.com/tonsky/FiraCode)
+- Extensões
+  - Dracula Theme Official (Dracula Theme)
+  - Material Icon Theme (Philipp Kief)
+  - Color Highlight (Sergii N)
+  - Live Server (Ritwick Dey)
+  - EditorConfig for VS Code (EditorConfig)
+  - Prettier - Code formatter (Prettier)
+  - ESLint (Microsoft)
+  - Vetur (Pine Wu)
+  - PHP DocBlocker (Neil Brayfield)
+  - PHP Intelephense (Ben Mewburn)
+  - SQLite (alexcvzz)
+  - vscode-styled-components (Styled Components)
+- Configurações
+  - Ctrl + Shift + P → Abrir o arquivo Open User Settings (JSON)
+  - Consulte o arquivo settings.json para ver minhas configurações
 
 ## Problemas
 
